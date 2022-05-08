@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap");
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+@media (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+}
+:root {
+    --blue: #e0e8ff;
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: #f5f7ff;
+    --Desaturated-blue: #7280a7;
+    --Dark-blue: hsl(223, 47%, 23%);
+  }
+body{
+    background-image:url(./images/pattern-background-desktop.svg) ;
+    background-color: var(--blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 350px;
+    height: 550px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 15px;
+    
+}
+img{
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+    margin-bottom: 20px;
+}
+.context{
+    text-align: center; 
+}
+.context >h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.context p{
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    margin-bottom: 11px;
+
+}
+.plan{
+    width: 80%;
+    height: 70px;
+    background-color: #e0e8ff60;
+    margin: 30px  30px ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.plan img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details h1{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.details p {
+    color:var(--Desaturated-blue); ;
+    font-size: 14px;
+}
+.plan h2{
+    color: var(--Bright-blue);
+    font-size: 12px;
+    text-decoration: underline;
+}
+h2:hover{
+    text-decoration: none;
+    opacity: .5;
+    cursor: pointer;
+}
+.price{
+    margin-left: 10px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.proceed{
+    width: 80%;
+    background-color: var(--Bright-blue);
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: rgb(100 100 111 / 65%) 0px 7px 29px 0px; 
+    margin-bottom: 25px;
+}
+.proceed:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.cancel{
+    background-color: transparent;
+    border-color:transparent;
+    font-size: 15px;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+}
+.cancel:hover{
+    color: black;
+    cursor: pointer;
+}
